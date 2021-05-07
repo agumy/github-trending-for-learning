@@ -41,7 +41,7 @@ export default function Home() {
           <div className="w-full h-full bg-gray-700 shadow-lg rounded-lg overflow-auto">
             <ol>
               {state.data?.map((d) => (
-                <Trending trending={d} />
+                <Trending key={d.title} trending={d} />
               ))}
             </ol>
           </div>
